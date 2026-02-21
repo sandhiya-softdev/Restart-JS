@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <button onclick="showQuality()">showquality</button>
+    <button onclick="add1Num()">Add to cart</button>
+    <button onclick=" add2Num()">+2</button>
+    <button onclick=" add3Num()">+3</button>
+    <button onclick="restart()">Restart cart</button>
+    <div id="show"></div>
+    <div id="show1"></div>
+    <div id="show2"></div>
+    <div id="show3"></div>
+    <div id="show4"></div>
+
+
+    <script>
+        let amount = 0;
+
+
+      
+      
+        function showQuality(){
+              let show = document.getElementById("show");
+            show.innerHTML = amount;
+            }
+
+
+       function add1Num(){
+           amount = amount +1;
+        let show1 = document.getElementById("show1");
+        show1.innerHTML = amount;
+        }
+
+        function add2Num(){
+               amount = amount +2;
+        let show2 = document.getElementById("show2");
+        show1.innerHTML = amount;
+        }
+        function add3Num(){
+               amount = amount +3;
+        let show3 = document.getElementById("show3");
+        show1.innerHTML = amount;
+        }
+
+        function restart(){
+                amount =0;
+                 let show1 = document.getElementById("show1");
+                 let show3 = document.getElementById("show3");
+               let show4 = document.getElementById("show4");
+            show4.innerHTML = amount;
+
+        }
+
+
+    </script>
+    
+</body>
+</html>
